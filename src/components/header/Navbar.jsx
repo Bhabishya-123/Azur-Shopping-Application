@@ -11,7 +11,7 @@ const Wrapper = Styled.div`
     position:sticky;
     top:0;
     background:white;
-    z-index:2;
+    z-index:5;
     height:60px;
     display:flex;
     align-items: center;
