@@ -8,6 +8,10 @@ import {Link} from 'react-router-dom'
 import {mobile} from '../../responsive'
 
 const Wrapper = Styled.div`
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:2;
     height:60px;
     display:flex;
     align-items: center;
@@ -15,6 +19,7 @@ const Wrapper = Styled.div`
 `;
 const Left = Styled.div`
 flex:1;
+${mobile({flex:2})};
 `;
 const Logo = Styled.h1`
   display: flex;
@@ -26,6 +31,7 @@ const Logo = Styled.h1`
 const Center = Styled.div`
 display:flex;
 flex:3;
+${mobile({flex:4})};
 `;
 const SearchContainer = Styled.div`
     height:45px;
@@ -56,18 +62,26 @@ const Right = Styled.div`
 display:flex;
 justify-content:flex-end;
 flex:2;
+${mobile({flex:'1',justifyContent:'center'})}
 `;
 const MenuItemCont = Styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
 margin-right:60px;
+${mobile({display:'none'})};
 `;
 const MenuItem = Styled.div`
     font-size:16px;
     cursor:pointer;
     margin-left:25px;
 `;
+
+const MenuItemShopCart = Styled(MenuItem)`
+ ${mobile({display:'flex'})};
+ margin:0;
+ display:none;
+`
 
 function Navbar() {
   return (
@@ -101,6 +115,13 @@ function Navbar() {
         </MenuItem>
         </Link>
      </MenuItemCont>
+     <Link to="/cart" style={{textDecoration:'none'}}>
+        <MenuItemShopCart>
+          <Badge badgeContent={2} color="warning">
+            <ShoppingCartIcon style={{color:'black'}}/>
+          </Badge>
+        </MenuItemShopCart>
+        </Link>
       </Right>
     </Wrapper>
   );

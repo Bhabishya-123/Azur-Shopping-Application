@@ -49,7 +49,7 @@ justify-content:center;
 transition:all 500ms ease;
 &:hover{
   transform:scale(1.1);
-  background:black;
+  background:violet;
 }
 `;
 
