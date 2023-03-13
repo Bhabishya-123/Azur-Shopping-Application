@@ -15,7 +15,7 @@ const Wrapper = Styled.div`
     height:60px;
     display:flex;
     align-items: center;
-    ${mobile({height:'45px'})};
+    ${mobile({height:'50px'})};
 `;
 const Left = Styled.div`
 flex:1;
