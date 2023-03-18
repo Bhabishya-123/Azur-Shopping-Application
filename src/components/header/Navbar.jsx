@@ -43,10 +43,15 @@ const SearchContainer = Styled.div`
     justify-content:center;
 `;
 const NavInput = Styled(Input)`
+    font-family:cursive;
     height:25px;
     width:80%;
     background:whitesmoke;
     color:grey;
+  &:focus{
+    font-size:15px;
+    color:grey;
+  }
 `;
 const SearchBtn = Styled.button`
     display:flex;
