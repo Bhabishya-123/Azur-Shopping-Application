@@ -87,7 +87,7 @@ function Navbar() {
   return (
     <Wrapper>
       <Left>
-      <Link to="/" style={{textDecoration:'none'}}>
+      <Link to="/" style={{textDecoration:'none',color:'black'}}>
         <Logo>AZUR</Logo>
         </Link>
       </Left>
@@ -101,13 +101,13 @@ function Navbar() {
       </Center>
       <Right>
      <MenuItemCont>
-     <Link to="/register" style={{textDecoration:'none'}}>
+     <Link to="/register" style={{textDecoration:'none',color:'black'}}>
      <MenuItem>Register</MenuItem>
      </Link>
-     <Link to="/login" style={{textDecoration:'none'}}>
+     <Link to="/login" style={{textDecoration:'none',color:'black'}}>
         <MenuItem>SignIn</MenuItem>
         </Link>
-        <Link to="/cart" style={{textDecoration:'none'}}>
+        <Link to="/cart" style={{textDecoration:'none',color:'black'}}>
         <MenuItem>
           <Badge badgeContent={2} color="warning">
             <ShoppingCartIcon style={{color:'black'}}/>
@@ -115,7 +115,7 @@ function Navbar() {
         </MenuItem>
         </Link>
      </MenuItemCont>
-     <Link to="/cart" style={{textDecoration:'none'}}>
+     <Link to="/cart" style={{textDecoration:'none',color:'black'}}>
         <MenuItemShopCart>
           <Badge badgeContent={2} color="warning">
             <ShoppingCartIcon style={{color:'black'}}/>

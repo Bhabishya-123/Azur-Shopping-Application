@@ -25,7 +25,7 @@ function Products() {
   return (
     <Wrapper>
   {
-    popularProduct.filter((item)=>item.id<=12).map((product)=>(
+    popularProduct.filter((item)=>item.id<=20).map((product)=>(
 <Product key={product.id} product={product}/>
     ))
   }
